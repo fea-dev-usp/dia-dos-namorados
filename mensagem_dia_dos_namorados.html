@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia Dos Namorados</title>
+
+    <style>
+        body{
+          background-image: url('https://www.gatheringbeauty.com/s/White-Heart-Desktop-Wallpaper.png');
+          
+          background-position: center;
+          background-size: 1500px;
+        }
+
+        .painel{
+            margin: auto;
+            background-color: #f7d9da;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'cambria'
+        }
+        #sim{
+            height: 40px;
+            width: 60px;
+            background-color: green;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -50px;
+        }
+        #nao{
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+        }
+
+    
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="painel">
+        <h1>&#9829 Feliz Dia dos Namorados &#9829</h1>
+        <br>
+
+        <img src="https://media3.giphy.com/media/bjkV301j0U2Mc4orf9/200.gif?cid=6c09b952zkjzalliwoes0yyd90gm96wtfrl3bbm2l3flyg9o&ep=v1_gifs_search&rid=200.gif&ct=g">
+        <br>
+        <br>
+        <h3>Aceita ser o CSS do meu HTML? </h3>
+        
+
+        <button id="sim" onclick="parabens()"> Sim! </button>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+        
+    </div>
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+
+        }
+    
+        function parabens(){
+            alert("Parabéns, vc...")
+
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
