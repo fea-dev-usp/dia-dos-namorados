@@ -1,4 +1,4 @@
-![Dia dos Namorados](https://github.com/fea-dev-usp/dia-dos-namorados/assets/122839919/59ccc942-3171-4b1f-888b-fd82aa1a5266)
+![Dia dos namorados capa](https://github.com/fea-dev-usp/dia-dos-namorados/assets/122839919/a9bc1acf-c3c3-46ba-9421-4c1a416c7f30)
 
 <div align="center">
  
